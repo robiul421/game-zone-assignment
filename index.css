@@ -365,12 +365,12 @@ background-clip: text;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 100px;
-    padding-left: 50PX;
+    margin: 0px 0px;
+   
     background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
  }
  .career-content{
-    padding: 50px 20px;
+    padding: 50px 100px;
  }
  .career-list{
     display: flex;
@@ -392,12 +392,14 @@ font-weight: 700;
     color: #FFF;
 
 font-size: 1rem;
+
  }
  .box2, .box3{
     color: #FFF;
-font-size: 1.25;
-font-weight: 600;
-line-height: 40px;
+font-size: 1.25rem;
+font-weight: 500;
+line-height: 30px;
+
  }
  .box3{
     display: flex;
@@ -421,13 +423,13 @@ padding: 5px 10px;
     .many-items{
         
      background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);;
-     padding: 80px 150px;
-      
-
-       display: grid;
-       grid-template-columns: repeat(5,1fr);
-      gap: 10px;
+     padding: 80px 300px;
+     gap: 60px;
+      display: flex;
       justify-content: center;
+        align-items: center;
+      flex-wrap: wrap;
+      
      
     }
 
@@ -435,16 +437,8 @@ padding: 5px 10px;
       
 
    
-    .item:nth-child(n+6){
-       display: flex;
-       justify-content: center;
-       
-    }
-    .item{
-        display: flex;
-        align-items: center;
-
-    }
+  
+    
     .item:hover{
         color: #F948B2;
         border: 2px solid #F948B2;
@@ -605,9 +599,33 @@ padding: 5px 10px;
     flex-direction: column;
     margin: 0px;
 }
+
 .career-content{
-    padding: 0px;
+    padding: 40px 0px;
     width: 100%;
+}
+.career-title{
+    padding-left: 20px;
+}
+.box1{
+    font-size: 0.6rem;
+    font-weight: 400;
+    line-height: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.box2{
+    font-size: 0.7rem;
+    padding-left: 20px;
+     
+}
+.box3{
+    font-size: 0.7rem;
+    padding-right: 20px;
+}
+.career-button{
+    font-size: 0.8rem;
+    margin-left: 20px;
 }
 .career-image{
     width: 100%;
@@ -615,9 +633,8 @@ padding: 5px 10px;
 .many-items{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    padding-top:  100px;
-    padding-bottom: 100px;
-    gap: 0px;
+   padding: 100px 20px;
+    gap: 5px;
     
 }
 .item img{
@@ -650,8 +667,10 @@ padding: 5px 10px;
 @media  screen and (min-width: 576px ) and (max-width:992px) {
 
     .navbar{
+        flex-direction: column;
         
         width: 100%;
+        height: auto;
        
     }
         .head{
@@ -716,6 +735,11 @@ padding: 5px 10px;
     .third{
      gap: 40px;
       
+    }
+    .many-items{
+        padding: 60px 100px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
     .footer{
         padding: 40px 100px;
